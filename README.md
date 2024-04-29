@@ -36,14 +36,14 @@ poetry export --without-hashes --format=requirements.txt > requirements.txt
 ```
 .
 ├── .git
-├── .github				        # ci/cd
+├── .github				          # ci/cd
 ├── .hydra_logs			        # microservice run logging folder
-├── <microservice-name>		    # source file of microservice
+├── <microservice-name>		  # source file of microservice
 |	├── <python-module>
 |	├── utils.py
 |	└── main.py
-├── <gitsubmodule_name>		    # git submodules in case of code share from other projects
-├── config				        # hydra config storage folder
+├── <gitsubmodule_name>		  # git submodules in case of code share from other projects
+├── config				          # hydra config storage folder
 ├── datasets
 ├── docker
 |	├── Dockerfile
@@ -51,12 +51,12 @@ poetry export --without-hashes --format=requirements.txt > requirements.txt
 ├── test
 ├── train
 ├── weights
-├── .env.dev				    # Dev env for docker compose
-├── .env.prod			        # Prod env for docker compose
+├── .env.dev				        # Dev env for docker compose
+├── .env.prod			          # Prod env for docker compose
 ├── .gitignore
 ├── .gitmodules
 ├── .pre-commit-config.yaml
-├── README.md			        # Documentation about the project, "How-to" for deployment and description of main complex components
+├── README.md			          # Documentation about the project, "How-to" for deployment and description of main complex components
 ├── pyproject.toml			    # package configurations
 └── requirements.txt
 ```   
