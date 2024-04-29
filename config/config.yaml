@@ -1,0 +1,12 @@
+defaults:
+  - override hydra/job_logging: custom
+  - override hydra/hydra_logging: colorlog
+
+hydra:
+  job:
+    chdir: False
+  run:
+    dir: ./.hydra_logs/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: ./.hydra_logs_multi/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${hydra.job.override_dirname}
