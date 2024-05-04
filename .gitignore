@@ -1,6 +1,6 @@
 # Project
-# temp/
-# datasets/
+temp/
+datasets/
 .hydra_logs
 
 # Byte-compiled / optimized / DLL files
